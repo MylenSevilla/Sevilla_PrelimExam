@@ -39,3 +39,10 @@
         copy:
           dest: /etc/motd
           content: "Ansible Managed Node by Sevilla"
+
+      - name: User with variable defined in config.yaml
+        ansible.builtin.user:
+            name: Sevilla
+            uid: 1022
+            group: root
+            home: /home/workstation
