@@ -33,4 +33,9 @@
       - name: MOTD Banner
         copy:
           dest: /etc/motd
+          content: "Ansible Managed Node by {{user}}"
+
+      - name: MOTD Banner Default
+        copy:
+          dest: /etc/motd
           content: "Ansible Managed Node by Sevilla"
